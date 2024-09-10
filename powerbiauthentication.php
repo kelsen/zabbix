@@ -1,12 +1,11 @@
-#!/usr/bin/php
 <?php
 require_once 'HTTP/Request2.php';
 
 function getAccessToken() {
 	
-    $tenant_id = '';
-    $client_id = '';
-    $client_secret = '';
+    $tenant_id = 'TENANT_ID';
+    $client_id = 'CLIENT_ID';
+    $client_secret = 'CLIENT_SECRET';
     
     $request = new HTTP_Request2();
     $request->setUrl('https://login.microsoftonline.com/' . $tenant_id . '/oauth2/token');
